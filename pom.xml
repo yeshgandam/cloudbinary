@@ -27,7 +27,7 @@
         <url>https://devopskesav.jfrog.io/artifactory/libs-snapshot</url>
     </snapshotRepository>
     <repository>
-        <id>central</id>
+        <id>releases</id>
         <name>a0bdlik6tnfce-artifactory-primary-0-releases</name>
         <url>https://devopskesav.jfrog.io/artifactory/libs-releases</url>
     </repository>	
@@ -43,7 +43,7 @@
     </snapshotRepository>
     
     <repository>
-        <id>central</id>
+        <id>releases</id>
         <name>jfrog.cloudbinary.io-releases</name>
         <url>http://18.204.218.89:8081/artifactory/libs-release-local</url>
     </repository>
