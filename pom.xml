@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
     <artifactId>cb10amdevops</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Cloud Binary Sample Spring MVC Application</name>
 
@@ -17,7 +17,6 @@
         <sonar.organization>10amsonar</sonar.organization>
         <sonar.projectKey>10am</sonar.projectKey>
         <sonar.login>62ee3801213aa52d3d1c3b4f14ac409697b571cc</sonar.login>
-
     </properties>
 
     <!--
@@ -34,6 +33,24 @@
     </repository>	
 </distributionManagement>
     -->
+    
+<distributionManagement>
+    
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>jfrog.cloudbinary.io-snapshots</name>
+        <url>http://18.204.218.89:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+    
+    <repository>
+        <id>central</id>
+        <name>jfrog.cloudbinary.io-releases</name>
+        <url>http://18.204.218.89:8081/artifactory/libs-release-local</url>
+    </repository>
+
+</distributionManagement>    
+    
+    
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
