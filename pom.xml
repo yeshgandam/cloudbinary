@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
     <artifactId>cb10amdevops</artifactId>
-    <version>1.0.9-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Cloud Binary Sample Spring MVC Application</name>
 
@@ -13,10 +13,11 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
  
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.organization>10amsonar</sonar.organization>
-        <sonar.projectKey>10am</sonar.projectKey>
-        <sonar.login>62ee3801213aa52d3d1c3b4f14ac409697b571cc</sonar.login>
+        <sonar.host.url>http://3.90.220.79:9000</sonar.host.url>
+        <sonar.organization>10amdevops</sonar.organization>
+        <sonar.projectKey>10amdevops</sonar.projectKey>
+        <sonar.login>sqp_95a44a99af80078c09b1e2bfc53a4bbef6c2b391</sonar.login>
+       
     </properties>
 
     <!--
@@ -39,13 +40,13 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>jfrog.cloudbinary.io-snapshots</name>
-        <url>http://18.204.218.89:8081/artifactory/libs-snapshot-local</url>
+        <url>http://54.156.113.36:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
     
     <repository>
         <id>releases</id>
         <name>jfrog.cloudbinary.io-releases</name>
-        <url>http://18.204.218.89:8081/artifactory/libs-release-local</url>
+        <url>http://54.156.113.36:8081/artifactory/libs-release-local</url>
     </repository>
 
 </distributionManagement>    
