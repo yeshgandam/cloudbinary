@@ -8,8 +8,8 @@ pipeline {
     //      stage('Stage-0 : Static Code Analysis Using SonarQube') { 
       //      steps {
         //         sh 'mvn clean verify sonar:sonar'
-             }
-         }
+          //   }
+       //  }
         stage('Stage-1 : Clean') { 
             steps {
                 sh 'mvn clean'
