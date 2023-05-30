@@ -45,21 +45,21 @@ pipeline {
                 sh 'mvn package'
             }
         }
-         stage('Stage-8 : Deploy an Artifact to Artifactory Manager i.e. Nexus/Jfrog') { 
-           steps {
-              sh 'mvn deploy'
-             }
-       }
-           stage('Stage-9 : Deployment - Deploy a Artifact devops-2.0.0-SNAPSHOT.war file to Tomcat Server') { 
-            steps {
-                 sh 'curl -u admin:Redhat@143 -T target/devops.war "http://34.205.77.129:8080/manager/text/deploy?path=/cbapp&update=true"'
-             }
-         } 
+     //    stage('Stage-8 : Deploy an Artifact to Artifactory Manager i.e. Nexus/Jfrog') { 
+       //    steps {
+         //     sh 'mvn deploy'
+        //     }
+      // }
+        //   stage('Stage-9 : Deployment - Deploy a Artifact devops-2.0.0-SNAPSHOT.war file to Tomcat Server') { 
+          //  steps {
+            //     sh 'curl -u admin:Redhat@143 -T target/devops.war "http://34.205.77.129:8080/manager/text/deploy?path=/cbapp&update=true"'
+            // }
+        // } 
   
-           stage('Stage-10 : SmokeTest') { 
-             steps {
-                 sh 'curl --retry-delay 10 --retry 5 "http://34.205.77.129:8080/cbapp"'
-             }
-         }
+          // stage('Stage-10 : SmokeTest') { 
+           //  steps {
+             //    sh 'curl --retry-delay 10 --retry 5 "http://34.205.77.129:8080/cbapp"'
+            // }
+        // }
     }
 }
