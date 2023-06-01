@@ -9,12 +9,15 @@ phases:
       - pwd
       - ls -lrta
       - cd $CODEBUILD_SRC_DIR
-   #   - pwd
-   #   - ls -lrta
+      - pwd
+      - ls -lrta
+    
   build:
     commands:
       - echo Build started on `date`
       - mvn clean validate compile test install verify package
+      - ls -lrta
+      - cd target 
       - ls -lrta
   post_build:
     commands:
