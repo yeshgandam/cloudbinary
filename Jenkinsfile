@@ -50,15 +50,15 @@ pipeline {
               sh 'mvn deploy'
             }
       }
-           stage('Stage-9 : Deployment - Deploy a Artifact devops-2.0.0-SNAPSHOT.war file to Tomcat Server') { 
+           stage('Stage-9 : Deployment - Deploy a Artifact devops.war file to Tomcat Server') { 
             steps {
-                 sh 'curl -u admin:Redhat@143 -T target/devops.war "http://3.93.234.201:8080/manager/text/deploy?path=/cbapp&update=true"'
+                 sh 'curl -u admin:redhat@123 -T target/devops.war "http://54.173.151.36:8080/manager/text/deploy?path=/cbapp&update=true"'
              }
          } 
   
            stage('Stage-10 : SmokeTest') { 
              steps {
-                 sh 'curl --retry-delay 10 --retry 5 "http://3.93.234.201:8080/cbapp"'
+                 sh 'curl --retry-delay 10 --retry 5 "http://54.173.151.36:8080/cbapp"'
              }
          }
     }
