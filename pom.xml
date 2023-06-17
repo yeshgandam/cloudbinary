@@ -12,11 +12,11 @@
         <junit.jupiter.version>5.2.0</junit.jupiter.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-
-         <sonar.host.url>http://34.237.243.148:9000</sonar.host.url>
-        <sonar.organization>cicdpipeline </sonar.organization>
-        <sonar.projectKey>cicdpipeline </sonar.projectKey>
-        <sonar.login>sqp_8646401822d5c926f50cb40d21f1f967c00df059</sonar.login>
+        
+        <sonar.host.url>http://34.237.243.148:9000</sonar.host.url>
+        <sonar.organization>vikas</sonar.organization>
+        <sonar.projectKey>vikas</sonar.projectKey>
+        <sonar.login>sqp_eed4356b6848d2a2cd27c24c51a72352efb45218</sonar.login> 
 
     </properties>
 
